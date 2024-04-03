@@ -1,0 +1,23 @@
+name: "MeshCentral"
+version: "0.0.1"
+slug: meshcentral_hassio
+url: "http://github.com/amasolov/hassio-addons/hassio-addon-meshcentral"
+description: "MeshCentral remote management for Home Assistant"
+arch:
+  - armv7
+  - amd64
+  - aarch64
+startup: "application"
+ingress: true
+ingress_port: 443
+init: false
+ports:
+  443/tcp: 4430
+boot: "auto"
+panel_title: "MeshCentral"
+panel_icon: "mdi:remote-desktop"
+panel_admin: true
+map:
+  - share:rw
+  - ssl
+  - addon_config:rw
