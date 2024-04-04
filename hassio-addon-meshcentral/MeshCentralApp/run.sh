@@ -20,5 +20,6 @@ else
     ln -s /config/meshcentral-backups meshcentral-backups
 fi
 
-node node_modules/meshcentral --tlsoffload
+node node_modules/meshcentral --user admin
+
 
